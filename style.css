@@ -51,7 +51,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: var(--body-color);
     width: 100%;
 }
 
