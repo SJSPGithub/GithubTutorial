@@ -18,6 +18,15 @@
     }
 }
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 :root{
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
@@ -38,6 +47,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 body{
@@ -63,6 +73,7 @@ header {
     text-transform: uppercase;
     animation-name: slideInLogo;
     animation-duration: 1s;
+    color: black;
 }
 
 .nav {
@@ -112,21 +123,53 @@ header {
     background-color: var(--primary-color);
     border-radius: 15px;
     justify-content: space-evenly;
-    width: 25vw;
+    width: 29vw;
     height: 25vw;
     transition: 0.7s;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    padding: 15px;
 }
 
 .cbox:hover {
-    width: 26vw;
+    width: 30vw;
     transition: 1s;
+    padding: 25px;
     background-color: var(--primary-color-ibox-alt3);
+}
+
+.contentTitle {
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: -10%;
+}
+
+.content {
+    text-align: center;
+}
+
+.content a {
+    color: black;
+    transition: 0.4s;
+}
+
+.content a:hover {
+    color: white;
+    transition: 0.5s;
 }
 
 .title {
     font-weight: 800;
-    font-size: 32px;
+    font-size: 42px;
     text-align: center;
     padding-top: 5vw;
-    color: var(--accent-color-orange);
+    color: black;
+}
+
+.icon {
+    font-weight: 700;
+    font-size: 72px;
+    background-color: var(--primary-color-ibox-alt);
+    border-radius: 50px;
 }
