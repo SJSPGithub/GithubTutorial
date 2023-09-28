@@ -162,4 +162,6 @@ table {
     padding-top: 2vw;
     text-align: center;
     color: black;
+    animation-name: slideInTop;
+    animation-duration: 0.8s;
 }
