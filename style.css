@@ -64,6 +64,16 @@ header {
     text-decoration: none;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vw;
+    width: 30vw;
+    height: 5vw;
+    animation-name: slideInTop;
+    animation-duration: 0.8s;
+}
+
 .logo {
     font-weight: 800;
     font-size: 28px;
@@ -78,16 +88,6 @@ header {
 .logo a {
     text-decoration: none;
     color: black;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1vw;
-    width: 30vw;
-    height: 5vw;
-    animation-name: slideInTop;
-    animation-duration: 0.8s;
 }
 
 .navButton {
