@@ -118,7 +118,7 @@ header {
 }
 
 table {
-    margin-top: 6vw;
+    margin-top: 3vw;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     background-color: var(--primary-color-ibox-alt3);
@@ -154,4 +154,12 @@ table {
   
   tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}
+
+.title {
+    font-weight: 800;
+    font-size: 42px;
+    padding-top: 2vw;
+    text-align: center;
+    color: black;
+}
