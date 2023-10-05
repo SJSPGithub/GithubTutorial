@@ -148,6 +148,18 @@ header {
 }
 .imgentext {
     background-color: green;
-    height: 10vw;
+    height: 20vw;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text {
+    padding: 20px;
+    width: 40vw;
+    background-color: red;
+    border-radius: 10px; 
+}
+.image img {
+    height: 20vw;
     width: auto;
 }
