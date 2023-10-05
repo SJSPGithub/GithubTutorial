@@ -26,6 +26,14 @@
         transform: translateY(0);
     }
 }
+@keyframes slideTopBottom2 {
+    from {
+        transform: translateY(-85px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 @keyframes slideBottomTop {
     from {
         transform: translateY(400px);
@@ -37,7 +45,15 @@
 
 @keyframes slideInLeft {
     from {
-        transform: translateX(-800px);
+        transform: translateX(-1500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(1500px);
     }
     to {
         transform: translateX(0);
@@ -50,6 +66,7 @@
     --sidebar-color: #FFF;
     --primary-color: #0873c5;
     --primary-color-light: #e6e5f0;
+    --primary-color-light2:rgb(126, 124, 124);
     --primary-color-ibox: #ffffff;
     --primary-color-ibox-alt: #9fa6bb99;
     --primary-color-ibox-alt2: #0873c5;
@@ -88,8 +105,6 @@ header {
     text-align: center;
     width: 25vw;
     text-transform: uppercase;
-    animation-name: slideInLogo;
-    animation-duration: 1s;
 }
 
 .logo a {
@@ -103,8 +118,6 @@ header {
     padding: 1vw;
     width: 22vw;
     height: 5vw;
-    animation-name: slideInTop;
-    animation-duration: 0.8s;
 }
 
 .navButton {
@@ -130,36 +143,91 @@ header {
 }
 .section1 {
     height: 50vw;
-    background-color: red;
+    background-color: var(--body-color);
+}
+.pagetitle {
+    background-color: var(--primary-color-ibox);
+    height: 5vw;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    animation-name: slideTopBottom2;
+    animation-duration: 1s;
+}
+.boxtop {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 10vw;
+    padding: 5vw;
+}
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vw;
 }
 .container{
     width: 90%;
-    height: 30vw;
-    background-color: blue;
+    height: 32vw;
+    background-color: var(--primary-color-light2);
+    border-radius: 10px;
 }
 .title {
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     font-size: 28px;
     font-weight: 600;
+    text-decoration: underline;
 }
 .imgentext {
-    background-color: green;
-    height: 20vw;
+    height: 23vw;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.enkeltext {
+    height: 23vw;
     width: auto;
     display: flex;
     justify-content: space-evenly;
 }
 .text {
-    padding: 20px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: large;
     width: 40vw;
-    background-color: red;
+    background-color: rgb(173, 171, 171);
     border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text1 {
+    padding-left: 3vw;
+    padding-right: 2vw;
+    font-size: large;
+    width: 75vw;
+    background-color: rgb(173, 171, 171);
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .image img {
-    height: 20vw;
+    height: 23vw;
     width: auto;
+}
+
+.slideLeft {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+
+.slideRight {
+    animation-name: slideInRight;
+    animation-duration: 1.5s;
+}
+
+.slideLeft2 {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
 }
