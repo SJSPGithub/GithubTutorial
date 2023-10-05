@@ -18,6 +18,23 @@
     }
 }
 
+@keyframes slideTopBottom {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes slideBottomTop {
+    from {
+        transform: translateY(400px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 @keyframes slideInLeft {
     from {
         transform: translateX(-800px);
@@ -37,7 +54,6 @@
     --primary-color-ibox-alt: #9fa6bb99;
     --primary-color-ibox-alt2: #0873c5;
     --primary-color-ibox-alt3: #035da2;
-    --primary-color-ibox-alt4: #004c85;
     --toggle-color: #DDD;
     --text-color: #707070;
 }
@@ -48,7 +64,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: black;
 }
 
 body{
@@ -63,16 +79,6 @@ header {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1vw;
-    width: 22vw;
-    height: 5vw;
-    animation-name: slideInTop;
-    animation-duration: 0.8s;
 }
 
 .logo {
@@ -91,6 +97,16 @@ header {
     color: black;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vw;
+    width: 22vw;
+    height: 5vw;
+    animation-name: slideInTop;
+    animation-duration: 0.8s;
+}
+
 .navButton {
     text-decoration: none;
     border-radius: 10px;
@@ -98,7 +114,6 @@ header {
     font-weight: 700;
     padding: 10px;
     transition: 0.6s;
-    height: auto;
 }
 .navButton:hover {
     transition: 0.6s;
@@ -109,50 +124,30 @@ header {
     background-color: var(--primary-color-ibox-alt2);
     color: white;
 }
-.titleblock {
-    height: 10vw;
+
+.section {
     width: 100%;
-    background-color: var(--primary-color-ibox-alt4);
-    text-align: center;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 3.5vw;
 }
-.textspacing {
-    padding-top: 3vw;
-    width: 50%;
-}
-.text {
-    color: black;
-    width: 90%;
-    font-size: 18px;
-}
-.subtitle {
-    font-size: 24px;
-    color: black;
-    text-align: left;
-    padding-left: 15%;
-}
-.sub1 {
-    padding-top: 2vw;
-}
-.cat {
-    background-color: var(--primary-color-ibox-alt);
-    padding: 5vw;
-}
-.cat1 {
+.section1 {
+    height: 50vw;
+    background-color: red;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 10vw;
 }
-.cat img {
-    border-radius: 10px;
+.container{
+    width: 90%;
+    height: 30vw;
+    background-color: blue;
 }
-
-.text {
-    background-color: grey;
-    width: 40%;
-    font-size: 16px;
-    height: 25vw;
-    border-radius: 10px;
-    padding: 4vw;
+.title {
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.imgentext {
+    background-color: green;
+    height: 10vw;
+    width: auto;
 }
