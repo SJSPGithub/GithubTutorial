@@ -69,7 +69,7 @@ header {
     justify-content: space-evenly;
     padding: 1vw;
     width: 22vw;
-    height: 5vw;
+    height: auto;
     animation-name: slideInTop;
     animation-duration: 0.8s;
 }
