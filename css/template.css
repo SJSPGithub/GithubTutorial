@@ -71,6 +71,7 @@
     --primary-color-ibox-alt2: #0873c5;
     --primary-color-ibox-alt3: #035da2;
     --toggle-color: #DDD;
+    --primary-color-hover: #d9dde7c3;
     --text-color: #707070;
 }
 
@@ -275,6 +276,6 @@ header {
 }
 
 .pnbut a:hover {
-    background-color: var(--primary-color-ibox-alt);
+    background-color: var(--primary-color-hover);
     transition: 0.6s;
 }
