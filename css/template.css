@@ -61,7 +61,6 @@
 }
 
 :root{
-    /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
     --primary-color: #0873c5;
@@ -201,6 +200,15 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+.href {
+    color: blue;
+}
+
+.href:hover {
+    color: darkblue;
+}
+
 .text1 {
     padding-left: 3vw;
     padding-right: 2vw;
