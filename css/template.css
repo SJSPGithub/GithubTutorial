@@ -263,6 +263,7 @@ header {
 .pnbut {
     display: flex;
     justify-content: space-evenly;
+    font-weight: 600;
 }
 
 .pnbut i {
