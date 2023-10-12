@@ -307,6 +307,9 @@ header {
         animation-play-state: paused;
         overflow: hidden;
     }
+    body {
+        background-color: black;
+    }
     .sts {
         margin-top: 0px;
         position: absolute;
