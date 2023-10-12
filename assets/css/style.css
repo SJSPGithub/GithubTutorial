@@ -295,6 +295,7 @@ header {
     .navbar {
         margin-top: -50px;
         padding-bottom: 100px;
+        overflow-x: hidden;
     }
 }
 
