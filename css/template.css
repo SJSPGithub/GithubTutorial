@@ -67,12 +67,14 @@
     --primary-color-light: #e6e5f0;
     --primary-color-light2:rgb(126, 124, 124);
     --primary-color-ibox: #ffffff;
-    --primary-color-ibox-alt: #9fa6bb99;
+    --primary-color-ibox-alt: #9fa6bb;
     --primary-color-ibox-alt2: #0873c5;
     --primary-color-ibox-alt3: #035da2;
     --toggle-color: #DDD;
     --primary-color-hover: #d9dde7c3;
     --text-color: #707070;
+    --color-youtube: #d10000;
+    --color-youtube-hover: #a90b0b;
 }
 
 *
@@ -91,51 +93,74 @@ body{
 
 header {
     width: 100%;
-    height: 5vw;
-    background-color: var(--sidebar-color);
+    height: auto;
+    background-color: var(--primary-color-ibox-alt);
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
-}
-
-.logo {
-    font-weight: 800;
-    font-size: 28px;
-    padding-top: 1vw;
-    text-align: center;
-    width: 25vw;
-    text-transform: uppercase;
-}
-
-.logo a {
-    text-decoration: none;
-    color: black;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1vw;
-    width: 22vw;
     height: auto;
+    width: 100%;
+    padding: 30px;
 }
 
 .navButton {
-    text-decoration: none;
+    padding: 5px;
+}
+
+.navButton a {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--primary-color);
     border-radius: 10px;
-    color: black;
-    font-weight: 700;
     padding: 10px;
-    transition: 0.6s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
 }
-.navButton:hover {
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.logo a {
+    color: white;
+}
+
+.youtube {
+    padding: 5px;
+}
+
+.youtube a {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--color-youtube);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
     transition: 0.6s;
     color: white;
-    background-color: var(--primary-color-ibox-alt2);
 }
-.active {
-    background-color: var(--primary-color-ibox-alt2);
-    color: white;
+
+.youtube a:hover {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--color-youtube-hover);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.6s;
 }
 
 .section {
@@ -146,7 +171,7 @@ header {
     background-color: var(--body-color);
 }
 .pagetitle {
-    background-color: var(--primary-color-ibox);
+    background-color: var(--primary-color-ibox-alt);
     height: 5vw;
     width: 100%;
     text-align: center;

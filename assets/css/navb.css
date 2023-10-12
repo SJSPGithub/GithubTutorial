@@ -94,6 +94,10 @@ header {
 
 }
 
+.youtube {
+    padding: 5px;
+}
+
 .youtube a {
     width: auto;
     height: auto;
