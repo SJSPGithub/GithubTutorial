@@ -240,6 +240,10 @@ header {
     background-color: var(--primary-color-ibox-alt);
 }
 
+.sts {
+    margin-top: -25px;
+}
+
 @media only screen and (max-width: 1180px) {
     .navButton {
         text-align: center;
@@ -249,5 +253,33 @@ header {
     .cbox {
         height: auto;
         padding-top: 5vw;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .cbox {
+        width: 25%;
+        height: 80%;
+    }
+    .cbox:hover {
+        width: 26%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .sts {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.639);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        font-weight: 600;
+        font-size: larger;
+    }
+    .sts span {
+        color: white;
     }
 }
