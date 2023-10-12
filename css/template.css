@@ -226,11 +226,13 @@ header {
     display: flex;
     justify-content: space-evenly;
     padding: 5vw;
+    height: auto;
 }
 .box {
     display: flex;
     justify-content: space-evenly;
     padding: 5vw;
+    height: auto;
 }
 .container{
     width: 90%;
@@ -247,17 +249,18 @@ header {
     text-decoration: underline;
 }
 .imgentext {
-    height: 23vw;
+    height: auto;
     width: auto;
     display: flex;
     justify-content: space-evenly;
 }
 .enkeltext {
-    height: 23vw;
+    height: auto;
     width: auto;
     display: flex;
     justify-content: space-evenly;
 }
+
 .text {
     padding-left: 1vw;
     padding-right: 1vw;
@@ -285,6 +288,9 @@ header {
 .text1 {
     padding-left: 3vw;
     padding-right: 2vw;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    height: auto;
     font-size: large;
     width: 75vw;
     background-color: rgb(173, 171, 171);
@@ -444,5 +450,14 @@ header {
 @media only screen and (max-width: 1200px) {
     .pagetitle {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .box {
+        height: auto;
+    }
+    .container {
+        height: auto;
     }
 }
