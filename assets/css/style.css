@@ -267,6 +267,9 @@ header {
 }
 
 @media only screen and (max-width: 950px) {
+    body {
+        overflow-y: hidden;
+    }
     .sts {
         margin-top: 0px;
         position: absolute;
