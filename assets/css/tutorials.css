@@ -185,3 +185,7 @@ table {
         height: auto;
     }
 }
+
+@media only screen and (min-width: 4096px) {
+
+}

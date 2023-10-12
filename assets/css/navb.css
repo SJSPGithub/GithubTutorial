@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@keyframes slideInLogo {
+    from {
+        transform: translateX(-400px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #0873c5;
+    --primary-color-light: #e6e5f0;
+    --primary-color-ibox: #ffffff;
+    --primary-color-ibox-alt: #9fa6bb99;
+    --primary-color-ibox-alt2: #0873c5;
+    --primary-color-ibox-alt3: #035da2;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --color-youtube: #d10000;
+    --color-youtube-hover: #a90b0b;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: var(--body-color);
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color-ibox-alt);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 30px;
+}
+
+.navButton {
+    padding: 5px;
+}
+
+.navButton a {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.youtube a {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--color-youtube);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+.youtube a:hover {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--color-youtube-hover);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.6s;
+}
