@@ -177,3 +177,11 @@ table {
     animation-name: slideInTop;
     animation-duration: 0.8s;
 }
+
+@media only screen and (max-width: 1180px) {
+    .navButton {
+        text-align: center;
+        padding: 5px;
+        height: auto;
+    }
+}

@@ -196,3 +196,15 @@ header {
     height: 35vw;
     background-color: var(--primary-color-ibox-alt);
 }
+
+@media only screen and (max-width: 1180px) {
+    .navButton {
+        text-align: center;
+        padding: 5px;
+        height: auto;
+    }
+    .cbox {
+        height: auto;
+        padding-top: 5vw;
+    }
+}
