@@ -267,8 +267,9 @@ header {
 }
 
 @media only screen and (max-width: 950px) {
-    body {
-        overflow-y: hidden;
+    *{
+        background-color: rgb(0, 0, 0);
+        animation-play-state: paused;
     }
     .sts {
         margin-top: 0px;
@@ -290,5 +291,18 @@ header {
     }
     .stsflex span {
         color: white;
+    }
+    .navbar {
+        margin-top: -50px;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        font-size: small;
+    }
+    .contentTitle {
+        font-size: small;
     }
 }
