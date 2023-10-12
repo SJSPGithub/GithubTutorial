@@ -27,6 +27,15 @@
     }
 }
 
+@keyframes slideInRight {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 :root{
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
@@ -73,6 +82,8 @@ header {
 
 .navButton {
     padding: 5px;
+    animation-name: slideInTop;
+    animation-duration: 0.8s;
 }
 
 .navButton a {
@@ -85,17 +96,34 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
+    transition: 0.6s;
+}
+
+.navButton a:hover {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--primary-color-ibox-alt3);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.6s;
 }
 
 .logo {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
-
+    animation-name: slideInLeft;
+    animation-duration: 1s;
 }
 
 .youtube {
     padding: 5px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
 }
 
 .youtube a {
