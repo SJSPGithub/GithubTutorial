@@ -111,6 +111,11 @@ header {
     animation-duration: 1s;
 }
 
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
 .youtube {
     padding: 5px;
     animation-name: slideInRight;
