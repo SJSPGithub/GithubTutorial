@@ -273,6 +273,18 @@ header {
     justify-content: space-evenly;
 }
 
+.text2 {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: large;
+    width: 30vw;
+    background-color: rgb(173, 171, 171);
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .href {
     color: blue;
 }
