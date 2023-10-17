@@ -365,3 +365,15 @@ header {
         width: auto;
     }
 }
+
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+    .content {
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .content {
+        font-size: larger;
+    }
+}
