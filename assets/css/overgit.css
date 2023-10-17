@@ -18,6 +18,15 @@
     }
 }
 
+@keyframes slideInTop2 {
+    from {
+        transform: translateY(-60px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 @keyframes slideInLeft {
     from {
         transform: translateX(-800px);
@@ -50,6 +59,7 @@
     --text-color: #707070;
     --color-youtube: #d10000;
     --color-youtube-hover: #a90b0b;
+    --color-black: black;
 }
 
 *
@@ -156,129 +166,80 @@ header {
     font-weight: 600;
     transition: 0.6s;
 }
-.section1 {
-    background-color: var(--body-color);
-    width: 100%;
-    height: auto;
-    padding-bottom: 7vw;
-}
-.box1 {
-    width: 100%;
-    height: 30vw;
-    margin-top: 5vw;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 2.5vw;
-}
-
-.cbox {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    border-radius: 15px;
-    justify-content: space-evenly;
-    width: 29vw;
-    height: auto;
-    transition: 0.7s;
-    animation-name: slideInLeft;
-    animation-duration: 1s;
-    padding: 15px;
-}
-
-.cbox:hover {
-    /* width: 30vw; */
-    transition: 1s;
-    padding: 15px;
-    padding-top: 35px;
-    background-color: var(--primary-color-ibox-alt3);
-}
-
-.contentTitle {
-    text-align: center;
-    font-weight: 800;
-    font-size: 18px;
-    margin-top: -10%;
-}
-
-.content {
-    text-align: center;
-}
-
-.content a {
-    color: black;
-    transition: 0.4s;
-}
-
-.content a:hover {
-    color: white;
-    transition: 0.5s;
-}
-
-.title {
-    font-weight: 800;
-    font-size: 42px;
-    text-align: center;
-}
-
-.faq {
-    color: black;
-    padding-top: 5vw;
-    animation-name: slideInTop;
-    animation-duration: 1s;
-}
-
-.ovrGit {
-    color: white;
-    padding: 3vw;
-    text-transform: uppercase;
-}
-
-.flexboxovr {
-    display: flex;
-    justify-content: center; 
-    padding-bottom: 3vw;
-}
-
-.ovrGitTxt {
-    width: 70%;
-    height: auto;
-    background-color: #035da2;
-    text-align: center;
-    padding: 2.5vw;
-    border-radius: 10px;
-}
-
-.mrlezen a {
-    background-color: var(--text-color);
-    padding: 0.5vw;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 500ms;
-    border: 0px black solid;
-}
-
-.mrlezen a:hover {
-    background-color: var(--primary-color-ibox-alt3);
-    transition: 500ms;
-    border: 2px black solid;
-}
-
-.icon {
-    font-weight: 700;
-    font-size: 72px;
-    background-color: var(--primary-color-ibox-alt);
-    border-radius: 50px;
-    margin-top: 5px;
-}
-
-.section2 {
-    width: 100%;
-    height: auto;
-    background-color: var(--primary-color-ibox-alt);
-}
 
 .sts {
     margin-top: -25px;
+}
+
+.s1 {
+    width: 100%;
+    height: auto;
+    background-color: var(--body-color);
+}
+
+.s1 h1 {
+    text-align: center;
+    padding: 5vh 0vw;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--color-black);
+    animation: slideInTop2 1s;
+}
+
+.flexb {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15vh;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+
+.flexb2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+    animation-name: slideInRight;
+    animation-duration: 1.5s;
+}
+
+.box1 {
+    background-color: var(--primary-color);
+    width: 85%;
+    height: auto;
+    padding: 5vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box1 a {
+    color: white;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+.buttut {
+    background-color: var(--primary-color-ibox-alt);
+    font-size: large;
+    border: 0px var(--primary-color) solid;
+    border-radius: 10px;
+    padding: 1vh;
+    transition: 0.5s;
+}
+
+.buttut:hover {
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    border: 2px black solid;
+}
+
+.buttut a {
+    text-decoration: none;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1180px) {
@@ -287,28 +248,12 @@ header {
         padding: 5px;
         height: auto;
     }
-    .cbox {
-        height: auto;
-        padding-top: 5vw;
-        padding-bottom: 3vw;
-    }
-}
-
-@media only screen and (min-width: 2560px) {
-    .cbox {
-        width: 25%;
-        height: 80%;
-    }
-    .cbox:hover {
-        height: 81%;
-    }
 }
 
 @media only screen and (max-width: 950px) {
     *{
         background-color: rgb(0, 0, 0);
         animation-play-state: paused;
-        overflow: hidden;
     }
     body {
         background-color: black;
@@ -339,29 +284,10 @@ header {
         padding-bottom: 100px;
         overflow-x: hidden;
     }
-    .section2 {
-        margin-bottom: -1000px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .content {
-        font-size: small;
-    }
-    .contentTitle {
-        font-size: small;
-    }
 }
 
 @media only screen and (max-width: 336px) {
     *{
         overflow: hidden;
-    }
-}
-
-@media only screen and (max-width: 1050px) {
-    .box1 {
-        height: auto;
-        width: auto;
     }
 }
