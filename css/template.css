@@ -387,7 +387,6 @@ header {
     width: 550px;
     height: 320px;
 }
-
 @media only screen and (max-width: 1180px) {
     .navButton {
         text-align: center;
