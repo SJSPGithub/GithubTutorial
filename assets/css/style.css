@@ -260,7 +260,6 @@ header {
 .mrlezen a:hover {
     background-color: var(--primary-color-ibox-alt3);
     transition: 500ms;
-    border: 2px black solid;
 }
 
 .icon {
