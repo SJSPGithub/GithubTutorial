@@ -388,11 +388,6 @@ header {
     height: 320px;
 }
 
-.hide {
-    background-color: var(--primary-color);
-    color: transparent;
-}
-
 @media only screen and (max-width: 1180px) {
     .navButton {
         text-align: center;
